@@ -56,12 +56,15 @@
                 </div> --> 
             <section class = "section-1">
                 <div class="move-admin">
-                <a href="/admin" ><img class = "rounded" src="images/black_admin.png" style = "width:200px; height:200px;"></a>
+                <span style="color:black; font-size:2rem; position:relative; top:36%;  margin-right: 10px;; ">Admin</span>
+                <a href="/admin" ><img  class = "images" src="images/simple.png" style = "width:200px; height:200px;"></a>
+                
                 </div>
             </section>
             <section class= "section-2">
                 <div class = "move-customer">
-                <a href="/customer" ><img class = "rounded" src="images/customer_confirm.png" style="width:200px; height:200px;"></a>
+                <a href="/customer" ><img  class = "images" src="images/simple.png" style="width:200px; height:200px;"></a>
+                <span style="color:white; font-size:2rem; position:relative; top:36%;  margin-left: 10px; ">Customers</span>
                 </div>
             </section>
                 

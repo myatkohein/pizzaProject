@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Pizza;
 use Illuminate\Http\Request;
 
 class CustomerController extends Controller
@@ -14,6 +14,11 @@ class CustomerController extends Controller
 
     public function index()
     {
-        return view('customer');
+        
+        $pizza = Pizza::all();
+        return view('customer.menu')->with("pizza",$pizza);
+    }
+    public function logout(){
+        return view('customer.logout_customer');
     }
 }

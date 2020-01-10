@@ -7,7 +7,7 @@
   <!-- <link rel="icon" type="image/png" href="../assets/img/favicon.png"> -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    admin
+    customer
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.css">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+   
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
    
   <!-- CSS Files -->
@@ -23,13 +25,11 @@
   <link href="../assets/css/now-ui-dashboard.css?v=1.5.0" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="../assets/demo/demo.css" rel="stylesheet" />
-
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" /> -->
 </head>
 
 <body>
   <!-- <div class="wrapper "> -->
-    <div class="sidebar" data-color="black">
+    <div class="sidebar" data-color="orange">
       <!--
         Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
     -->
@@ -37,26 +37,26 @@
       <div class="sidebar-wrapper" id="sidebar-wrapper">
         <ul class="nav">
           <li>
-            <a href="/admin">
-              <i class="now-ui-icons design_app"></i>
-              <p>Dashboard</p>
+            <a href="/customer">
+              <i class="now-ui-icons design_palette"></i>
+              <p>Menu</p>
+            </a>
+          </li>
+          <!-- <li>
+            <a href="/add_pizza">
+              <i class="now-ui-icons education_atom"></i>
+              <p>Add Pizza</p>
+            </a>
+          </li> -->
+          <li>
+            <a href="/orders">
+              <i class="now-ui-icons design_bullet-list-67"></i>
+              <p>Order List</p>
             </a>
           </li>
           
           <li>
-            <a href="/pizzas">
-              <i class="now-ui-icons design_bullet-list-67"></i>
-              <p>Pizza List</p>
-            </a>
-          </li>
-           <!-- <li>
-            <a href="/orders">
-              <i class="now-ui-icons education_atom"></i>
-              <p>Order List</p>
-            </a>
-          </li>  -->
-          <li>
-            <a href="/logout_admin">
+            <a href="/logout_customer">
               <i class="now-ui-icons media-1_button-power"></i>
               <p>Log out</p>
             </a>
@@ -107,6 +107,10 @@
     </div>
   
   <!--   Core JS Files   -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  
+    <script src="{{ asset('js/app.js') }}"></script>
   <script src="../assets/js/core/jquery.min.js"></script>
   <script src="../assets/js/core/popper.min.js"></script>
   <script src="../assets/js/core/bootstrap.min.js"></script>
@@ -121,12 +125,8 @@
   <script src="../assets/js/now-ui-dashboard.min.js?v=1.5.0" type="text/javascript"></script><!-- Now Ui Dashboard DEMO methods, don't include it in your project! -->
   <script src="../assets/demo/demo.js"></script>
   <script src="{{ asset('js/app.js') }}"></script>
-    <script type="text/javascript" src="//cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script>
+  <script type="text/javascript" src="//cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script>
 
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>  -->
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
     @yield("scripts")
 
 </body>

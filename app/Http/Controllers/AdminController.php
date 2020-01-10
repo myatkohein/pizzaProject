@@ -11,16 +11,10 @@ class AdminController extends Controller
     {
         $this->middleware('auth');
     }
-    public function index()
-    {
-        return view('admin.dashboard');
-    }
-    public function add_pizza(){
-        return view('admin.add_pizza');
-    }
-    public function pizzalist(){
-        return view('admin.pizzalist');
-    }
+    // public function index()
+    // {
+    //     return view('admin.dashboard');
+    // }
     public function logout_admin(){
         return view('admin.logout_admin');
     }
